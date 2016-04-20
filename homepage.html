@@ -1,0 +1,102 @@
+<html>
+
+<head>
+<title>Home</title>
+<!--<link rel="stylesheet" type="text/css" href="registration.css">-->
+<link rel="stylesheet" type="text/css" href="design.css">
+<style type="text/css">    
+h4{
+display: block;
+padding: 3px 10px;
+}
+
+.login{
+    box-shadow: -10px 10px 5px rgba(0, 0, 0,0.5);
+}
+</style>
+    
+<script type="text/javascript" src="menu.js">        
+</script>
+    
+</head>    
+
+<body>
+
+<div class="menu" style="float:top; width: 100%; height:11%;">
+    <div class="menuleft" style="float:left;">
+    <a href="registration.html" class="logo">
+    <img src="icons/musikIcon.png" width="50px" height="50px" style="float:left;">
+    <h2 style="float:left;"> Muzica</h2>
+    </a>
+    </div>
+    <div class="menuright" style="float:left;">
+    <ul> 
+        <li><a href="homepage.html" onmouseover="mOpen('m1')" onmouseout="mCloseTime()">Home</a>
+            <div id="m1" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">About Us</a>
+                <a href="#">Mission</a>
+                <a href="#">Vision</a>
+                <a href="#">Contact Us</a>
+            </div>            
+        </li>
+        <li><a href="userpro.html" onmouseover="mOpen('m4')" onmouseout="mCloseTime()">Profile</a>
+            <div id="m4" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">My Profile</a>
+                <a href="#">Previous Purchases</a>
+                <a href="#">Edit Profile</a>
+            </div>            
+        </li>
+        <li><a href="catalogue.html" onmouseover="mOpen('m2')" onmouseout="mCloseTime()">Catalogue</a>
+            <div id="m2" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Genres</a>
+                <a href="#">Music</a>
+            </div>             
+        </li>
+        <li><a href="registration.html" onmouseover="mOpen('m3')" onmouseout="mCloseTime()">Register</a>
+            <div id="m3" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Register</a>
+                <a href="#">Login</a>
+            </div>            
+        </li>
+        <li><a href="musicstore.html" onmouseover="mOpen('m6')" onmouseout="mCloseTime()">Music</a>
+            <div id="m6" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Songs</a>
+                <a href="#">Albums</a>
+                <a href="#">Artists</a>
+                <a href="#">Genres</a>
+            </div>            
+        </li>
+        <li><a href="shoppingcart.html">Shopping Cart</a>  <!-- onmouseover="mOpen('m5')" onmouseout="mCloseTime()" -->
+            </div>       
+        </li>
+        
+    </ul>   
+    </div>  
+    
+<div class="login" style="background-image: url(icons/music2.jpg); background-size:cover; width: 100%; height:88%;">
+<table id="roundedcorners">
+	<tr>
+        <th colspan="2">Log In</th>
+    </tr>
+	<td><h4>Username: </h4></td>
+	<td><input class="lol" type="text" placeholder="Email-Id"></td>
+	</tr>
+	<tr>
+	<td><h4>Password: </h4></td>
+	<td><input class="lol" type="password"  placeholder="********"></td>
+	</tr>	
+	<tr>    
+	<td colspan="2"><form action="catalogue.html" method="post"><input type="submit" value="Log In" class="button" style="width:100%;"></form></td>
+	</tr>
+</table>
+</center>   
+</div>
+
+<div class="footer">
+    <center>
+    <h5 style="color:white;">Copyright &copy; 1995-2016. All Rights Reserved.</h5>
+    </center>
+</div>
+</body>
+</html>
+
