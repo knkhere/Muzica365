@@ -1,0 +1,164 @@
+#rcorners {
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.menu{
+    background-color: #4CAF50;
+    padding: 0px;
+    margin: 0px;
+    border-radius: 0px;
+    float:top; 
+    width: 100%; 
+    height:11%;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+.menu li {
+float:left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #4CAFFF;
+}
+
+#roundedcorners {
+    border-radius: 25px;
+    border: 2px solid white;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+    margin-bottom: 20px;
+    margin-top: 100px;
+    margin-right: 100px;
+    float: right;
+    background-color: white;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0,0.5);
+}
+
+.roundedcorners{
+ box-shadow: -10px 10px 5px rgba(0, 0, 0,0.5);   
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 0px;
+    border-radius: 55px;
+}
+
+h4{
+font-size: 18px;    
+color: #4CAF50;
+}
+
+h2{
+ color:white;   
+}
+.menuleft:hover{
+   background-color: #4CAFFF; 
+    
+}
+.menuleft{
+ padding:0px 5px;   
+}
+    
+th{
+ color:#4CAF50;
+ font-size: 24px;
+ font-weight: bold;
+}
+body{
+font-family:sans-serif;
+background-color: #4CAF50;
+}
+    
+.footer{
+width: 100%;
+height: 5%;    
+}
+
+.button:hover{
+    background-color: #4CAFFF;  
+}
+
+
+.menu{
+    background-color: #4CAF50;
+    padding: 0px;
+    margin: 0px;
+}
+.menuright ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+.menuright li {
+float:left;
+}
+
+.menuright li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menuright a:hover {
+    background-color: #4CAFFF;
+}
+    
+.menuright div{
+    position: absolute;
+    visibility: hidden;
+    background: white;
+    border: 1px solid #4CAF50;
+}
+
+.menuright div a{
+    position: relative;
+    display: block;
+    padding 5px 10px;
+    width: auto;
+    text-align: left;
+    color: #4CAF50;
+}
+
+.menuright div a:hover{
+    color:white;
+}
+    

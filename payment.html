@@ -1,0 +1,208 @@
+<html>
+
+<head>
+<title>Payment</title>
+<link rel="stylesheet" type="text/css" href="design.css">
+<style>
+.menu{
+    background-color: #4CAF50;
+    padding: 0px;
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+li {
+float:left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #4CAFFF;
+}
+
+#roundedcorners {
+    border-radius: 25px;
+    border: 2px solid none;
+    padding: 20px; 
+    width: 200px;
+    height: 150px;    
+    background-color: white;
+    margin: 20px;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+.button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 0px;
+    border-radius: 55px;
+}
+.button:hover{
+    background-color: #4CAFFF;
+    color: white;
+}
+h4{
+font-size: 18px;    
+color: #4CAF50;
+}
+h2{
+ color:white;   
+}
+.menuleft:hover{
+   background-color: #4CAFFF; 
+    
+}
+.menuleft{
+ padding:0px 5px;   
+}
+h4{
+display: block;
+padding: 3px 10px;
+}
+td{
+vertical-align: middle;
+    color: #4CAF50;
+}
+body{
+  font-family:sans-serif;
+background-color: #4CAF50;    
+}
+.footer{
+width: 100%;
+height: 5%;       
+}    
+    
+#roundedcorners td h4{
+    vertical-align: text-bottom;
+}
+
+#roundedcorners td{
+    vertical-align: text-bottom;
+}
+.paymentIcons{
+    margin-right: 55px;
+}
+</style>
+<script type="text/javascript" src="menu.js"></script> 
+</head>    
+
+<body>
+<div class="menu" style="float:top; width: 100%; height:11%;">
+    <div class="menuleft" style="float:left;">
+    <a href="registration.html" class="logo">
+    <img src="icons/musikIcon.png" width="50px" height="50px" style="float:left;">
+    <h2 style="float:left;"> Muzica</h2>
+    </a>
+    </div>
+    <div class="menuright" style="float:left;">
+    <ul> 
+        <li><a href="index.php" onmouseover="mOpen('m1')" onmouseout="mCloseTime()">Home</a>
+            <div id="m1" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">About Us</a>
+                <a href="#">Mission</a>
+                <a href="#">Vision</a>
+                <a href="#">Contact Us</a>
+            </div>            
+        </li>
+        <li><a href="userpro.html" onmouseover="mOpen('m4')" onmouseout="mCloseTime()">Profile</a>
+            <div id="m4" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">My Profile</a>
+                <a href="#">Previous Purchases</a>
+                <a href="#">Edit Profile</a>
+            </div>            
+        </li>
+        <li><a href="catalogue.php" onmouseover="mOpen('m2')" onmouseout="mCloseTime()">Catalogue</a>
+            <div id="m2" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Genres</a>
+                <a href="#">Music</a>
+            </div>             
+        </li>
+        <li><a href="registration.html" onmouseover="mOpen('m3')" onmouseout="mCloseTime()">Register</a>
+            <div id="m3" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Register</a>
+                <a href="#">Login</a>
+            </div>            
+        </li>
+        <li><a href="musicstore.html" onmouseover="mOpen('m6')" onmouseout="mCloseTime()">Music</a>
+            <div id="m6" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Songs</a>
+                <a href="#">Albums</a>
+                <a href="#">Artists</a>
+                <a href="#">Genres</a>
+            </div>            
+        </li>
+        <li><a href="shoppingcart.html">Shopping Cart</a>  <!-- onmouseover="mOpen('m5')" onmouseout="mCloseTime()" -->
+            </div>       
+        </li>
+        
+    </ul>   
+    </div>        
+    
+<div style="height:90%; background-image: url(icons/music2.jpg); background-size:cover; margin:20px; padding:20px; box-shadow: -10px 10px 5px rgba(0, 0, 0,0.5); ">
+<center>
+<table id="roundedcorners">
+	<tr>
+    <td colspan="2"><center><strong><h1 style="text-align:center; color:#4CAF50;">Payment</h1></strong></center></td>
+    </tr>
+    <tr>
+	<td><h4>Card Number:</h4></td>
+	<td><input type="text" placeholder="1111 1111 1111 1111"></td>
+	</tr>
+    <tr>
+    <td><h4>Card Holder's Name: </h4></td>
+	<td><input type="text" placeholder="(e.g.) Shaun Paul"></td>
+	</tr>
+	<tr>
+	<td><h4>Password: </h4></td>
+	<td><input type="password"  placeholder="********"></td>
+	</tr>
+	<tr>
+	<td><h4>Expiration Date: </h4></td>
+	<td><input type="date" style="color:gray;"></td>
+	</tr>
+    <tr>
+    <td><h4>CVV: </h4></td>
+	<td style="color:white;"><input type="text" placeholder="999" style="width:50px;"></td>
+	</tr>
+    <tr>
+        <td colspan="2">
+            <img src="icons/pay1.jpg" width="50px" class="paymentIcons"><img src="icons/pay2.jpg" width="50px" class="paymentIcons">
+            <img src="icons/pay3.png" width="50px" class="paymentIcons"><img src="icons/doge.jpe" width="50px" class="paymentIcons" style="margin-right:0px; float:right;">
+        </td>
+	</tr>
+    <tr>
+    <td colspan="2">&nbsp;</td>    
+    </tr>    
+	<tr>    
+	<td colspan="2"><form method="post" action="orderplaced.html"><input type="submit" value="Make Payment" class="button" style="width:100%;"></td>
+	</tr>
+</table>
+</center>
+</div>
+    
+<div class="footer">
+    <center>
+    <h5 style="color:white;">Copyright &copy; 1995-2016 Kanak Sharma. All Rights Reserved.</h5>
+    </center>
+</div>
+    
+</body>
+</html>

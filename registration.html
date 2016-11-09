@@ -1,0 +1,240 @@
+<html>
+<head>
+<title>Registration</title>
+<!--<link rel="stylesheet" type="text/css" href="registration.css">-->
+<style>
+.menu{
+    background-color: #4CAF50;
+    padding: 0px;
+    margin: 0px;
+}
+.menuright ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #4CAF50;
+}
+
+.menuright li {
+float:left;
+}
+
+.menuright li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menuright a:hover {
+    background-color: #4CAFFF;
+}
+    
+.menuright div{
+    position: absolute;
+    visibility: hidden;
+    background: white;
+    border: 1px solid #4CAF50;
+}
+
+.menuright div a{
+    position: relative;
+    display: block;
+    padding 5px 10px;
+    width: auto;
+    text-align: left;
+    color: #4CAF50;
+}
+
+.menuright div a:hover{
+    color:white;
+}
+    
+#roundedcorners {
+    border-radius: 25px;
+    border: 2px solid none;
+    padding: 10px; 
+    width: 200px;
+    height: 150px;    
+    background-color: #4CAF50;
+    margin: 20px;
+    white-space: nowrap;
+    overflow: hidden; 
+}
+
+.button {
+    background-color: white;
+    color: #4CAF50;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 0px;
+    border-radius: 55px;
+}
+h4{
+font-size: 18px;    
+color: white;
+}
+h2{
+ color:white;   
+}
+.menuleft:hover{
+   background-color: #4CAFFF; 
+    
+}
+.menuleft{
+ padding:0px 5px;   
+}
+h4{
+display: block;
+padding: 3px 10px;
+}
+td{
+vertical-align: middle;
+    color: #4CAF50;
+}
+body{
+  font-family:sans-serif;
+background-color: #4CAF50;    
+}
+.footer{
+width: 100%;
+height: 5%;    
+}    
+
+#roundedcorners td h4{
+    vertical-align: text-bottom;
+}
+
+#roundedcorners td{
+    vertical-align: text-bottom;
+}    
+    
+.fix-div{position:fixed; height:89%; width:100%; left:0; top:11%; z-index:1;}
+.menu{position:fixed; z-index:3; width:100%; }
+.footer{position:fixed; z-index:3; width:100%; }
+#wrapper{position:relative; z-index:2; margin:100% 0 0;}
+    
+.menu{
+ position: fixed;   
+}
+</style>
+    
+
+<script type="text/javascript" src="menu.js"></script>    
+<script type="text/javascript" src="register.js">
+  
+</script>    
+</head>    
+
+<body>
+<div class="menu" style="width:100%; height:11%; top:0">  
+    <div class="menuleft" style="float:left;">
+    <a href="registration.html" class="logo">
+    <img src="icons/musikIcon.png" width="50px" height="50px" style="float:left;">
+    <h2 style="float:left;"> Muzica</h2>
+    </a>
+    </div>
+    <div class="menuright" style="float:left;">
+    <ul> 
+        <li><a href="index.php" onmouseover="mOpen('m1')" onmouseout="mCloseTime()">Home</a>
+            <div id="m1" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">About Us</a>
+                <a href="#">Mission</a>
+                <a href="#">Vision</a>
+                <a href="#">Contact Us</a>
+            </div>            
+        </li>
+        <li><a href="userpro.html" onmouseover="mOpen('m4')" onmouseout="mCloseTime()">Profile</a>
+            <div id="m4" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">My Profile</a>
+                <a href="#">Previous Purchases</a>
+                <a href="#">Edit Profile</a>
+            </div>            
+        </li>
+        <li><a href="catalogue.php" onmouseover="mOpen('m2')" onmouseout="mCloseTime()">Catalogue</a>
+            <div id="m2" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Genres</a>
+                <a href="#">Music</a>
+            </div>             
+        </li>
+        <li><a href="registration.html" onmouseover="mOpen('m3')" onmouseout="mCloseTime()">Register</a>
+            <div id="m3" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Register</a>
+                <a href="#">Login</a>
+            </div>            
+        </li>
+        <li><a href="musicstore.html" onmouseover="mOpen('m6')" onmouseout="mCloseTime()">Music</a>
+            <div id="m6" onmouseover="mCancelCloseTime()" onmouseout="mCloseTime()">
+                <a href="#">Songs</a>
+                <a href="#">Albums</a>
+                <a href="#">Artists</a>
+                <a href="#">Genres</a>
+            </div>            
+        </li>
+        <li><a href="shoppingcart.html">Shopping Cart</a>  <!-- onmouseover="mOpen('m5')" onmouseout="mCloseTime()" -->
+            </div>       
+        </li>
+        
+    </ul>   
+    </div>
+<div class="fix-div">      
+<img style="box-shadow: -10px 10px 5px rgba(0, 0, 0,0.5);" src="icons/music4.jpg" width="100%" height="100%">    
+</div>
+<div id="wrapper">
+<center><strong><h1 style="text-align:center; color:white;">New User? Register Here.</h1></strong></center>
+<center>   
+<form action="registration.php" method="post">    
+<table id="roundedcorners">
+	<tr>
+	<td><h4>Your name:<span class="star" style="color:red">*</span></h4></td>
+	<td><input type="text" name="usersname" placeholder="(e.g.) Sean Paul" id="req1"></td>
+	</tr>
+	<tr>
+    <td><h4>Username:<span  class="star" style="color:red">*</span> </h4></td>
+	<td><input type="text" name="userid" placeholder="(e.g.) spaul12" id="req2"></td>
+	</tr>
+	<td><h4>Email:<span  class="star"  style="color:red">*</span> </h4></td>
+	<td><input type="text" name="email" placeholder="spaul1212@email.com" id="email"></td>
+	</tr>
+	<tr>
+	<td><h4>Password:<span  class="star"  style="color:red">*</span> </h4></td>
+	<td><input type="password" name="pwd" placeholder="********" id="comp1"></td>
+	</tr>
+	<tr>
+	<td><h4>Confirm Password:<span class="star" style="color:red">*</span> </h4></td>
+	<td><input type="password" name="pwd2" placeholder="********" id="comp2"></td>
+	</tr>
+    <tr>
+    <td><h4>Gender:</h4></td>
+	<td style="color:white;"><input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female</td>
+	</tr>
+    <td><h4>Date of Birth:</h4></td>
+	<td><input type="date" name="dob" style="color:gray;"></td>
+	</tr>
+	<tr>
+    <td><h4>Address:</h4></td>
+	<td><textarea name="address" placeholder="Your Address Here."></textarea></td>
+	</tr>
+	<tr>
+    <td><h4>Zipcode:</h4></td>
+	<td><input type="text" name="zip" placeholder="111111" maxlength="6"></td>
+	</tr>
+	<tr>
+	<td colspan="2"><input type="submit" onclick="return check('Please enter')" value="Create your Bookstore account" class="button" style="width:100%;"></td>
+	</tr>
+</table> 
+</form>    
+</center>
+<div class="footer">
+    <center>
+    <h5 style="color:white;">Copyright &copy; 1995-2016 Kanak Sharma. All Rights Reserved.</h5>
+    </center>
+</div>
+</div>
+    
+</body>
+</html>
